@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #FFF6F6;
+}
+
+.navbar {
+    background-color: #EEEEEE;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding: 10px 0;
+}
+  
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 20px;
+}
+  
+.navbar-logo {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 20px;
+}
+  
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.navbar-item {
+    padding: 10px 0;
+}
+  
+.navbar-link {
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+  
+.navbar-link:hover {
+    color: #ffffff;
+    background-color: hotpink;
+}
+  
+.navbar-buttons {
+    display: flex;
+    align-items: center;
+}
+  
+.btn {
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 0.9rem;
+}
+  
+.btn-signin {
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #000;
+}
+  
+.btn-login {
+    background-color: #000;
+    color: #fff;
+}
+  
+.navbar-toggle {
+    display: none;
+}
+
+.ouraim{
+    /* border: solid red 2px; */
+    background-image: url(./images/bg-image-ouraim.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #99a6dc;
+    background-blend-mode: multiply;
+    color: white;
+    width: 100%;
+    margin-top: 40px;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+/*The bottom part*/
+article{
+    /* border: solid #000 3px; */
+    /* margin: 60px; */
+    padding: 40px;
+    display: flex;
+    gap: 200px;
+}
+  
+.left{
+    /* border: solid red 2px; */
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+  
+.right{
+    /* border: solid blue 2px; */
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+    font-style: normal;
+}
+  
+.smlinks{
+    /* text-decoration: none;  */
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    color: #000;
+}
+  
+a:hover {
+    color: hotpink;
+}
+  
+.contact{
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+}
+
+@media screen and (max-width: 1025px) {
+
+    .navbar-toggle {
+        display: block;
+        cursor: pointer;
+    }
+  
+    .navbar-toggle .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background-color: #000;
+    }
+  
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+  
+    .navbar-menu.active {
+        display: flex;
+    }
+  
+    .navbar-buttons {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-top: 10px;
+        order: 4;
+    }
+  
+    .navbar-buttons.active {
+        display: flex;
+    }
+  
+    .btn {
+        margin: 5px 0;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .navbar-container {
+        flex-wrap: wrap;
+    }
+  
+    .navbar-menu {
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+  
+    .navbar-buttons {
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar-logo {
+        font-size: 1.2rem;
+    }
+  
+    .btn {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}

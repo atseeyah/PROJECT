@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Connect</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">Charity Connect</a>
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                    <a href="./index.html" class="navbar-link">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="./charities.html" class="navbar-link">Initiatives & Programs</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="./whatwedo.html" class="navbar-link">What We Do</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="./ouraim.html" class="navbar-link">Our Aim</a>
+                </li>
+            </ul>
+            <!-- <div class="navbar-buttons">
+                <a href="./signup.html"><button class="btn btn-signin">Sign in</button></a> 
+                <a href="./signin.html"><button class="btn btn-login">Log in</button></a>
+            </div> -->
+        </div>
+    </nav>
+
+<!-- The video -->
+    <video autoplay muted loop id="myVideo">
+        <source src="./Project video.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+    <button id="myBtn" onclick="myFunction()">Pause</button>
+    </video>
+
+<!-- The four linked boxes-->
+ <section>
+    <div class="grid-container">
+        <div class="grid-item item1">
+            <h1>Initiatives & Programs</h1>
+            <p>Explore how our dedicated efforts are making a difference and shaping a brighter future for all.</p>
+            <button class="arrow-button b1">
+                <a href="#"><img src="./images/nextbutton-removebg-preview.png" alt="Arrow Button"></a>
+            </button>
+        </div>
+        <div class="grid-item item2">
+            <h1>What We Do</h1>
+            <p>Discover how we turn our vision into action and make a real impact every day.</p>
+            <button class="arrow-button b2">
+                <a href="./whatwedo.html"><img src="./images/nextbutton-removebg-preview.png" alt="Arrow Button"></a>
+            </button>
+        </div>
+        <div class="grid-item item3">
+            <h1>Our Aim</h1>
+            <p>Our aim is not just about addressing immediate needs, but also about fostering sustainable growth.</p>
+            <button class="arrow-button b3" href="./ouraim.html">
+                <a href="./ouraim.html"><img src="./images/nextbutton-removebg-preview.png" alt="Arrow Button"></a>
+            </button>
+        </div>
+        <div class="grid-item item4">
+            <h1>Get Involved</h1>
+            <p> Real change happens when passionate individuals come together with a shared purpose.</p>
+            <button class="arrow-button b4">
+                <a href="#"><img src="./images/nextbutton-removebg-preview.png" alt="Arrow Button"></a>
+            </button>
+        </div>
+    </div>    
+</section>
+<!--The remaining section-->
+<main>
+    <article> <!--For the whole bottom-->
+        <div class="left"> <!--For the left side-->
+            <aside class="top"> <!--The top paragraph-->
+                <p>ABOUT US</p>
+                <p>Charity Connect is a platform that revolutionizes the way donors connect with charities, 
+                making the donation process simpler, smarter, and more impactful. 
+                I understand that finding the right charity to support can be overwhelming, 
+                so I've created a user-friendly space where donors can easily discover organizations 
+                that align with their values and interests.</p>
+            </aside>
+            <aside class="bottom"> <!--The bottom-->
+                <p>Subscribe To Our NewsLetter</p>
+                <input type="email" id="email" name="email" placeholder="Enter your email here*">
+                <button class="sub">Subscribe Now</button>
+            </aside>
+        </div>
+        <div class="right"> <!--For the right-->
+            <address class="smlinks">
+                <a href="#">LinkedIn</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </address>
+            <address class="contact">
+                <h>CONTACT></h>
+                <p>T: 070 470 0997</p>
+                <p>W: +234 900 9511 5644</p>
+                <p>E: sulaimanatiyah@gmail.com</p>
+            </address>
+            <address class="safetylinks">
+                <p><a href="#">TERMS & CONDITIONS</a></p>
+                <p><a href="#">PRIVACY POLICY</a></p>
+                <p><a href="#">ACCESSIBILITY STATEMENT</a></p>
+            </address>
+        </div>
+    </article>
+</main>
+
+    <script src="script.js"></script>
+</body>
+</html>
